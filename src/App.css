@@ -1,38 +1,36 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #D7E0AA;
+  color:#2A4858;
+  ;
+}
+.top-name{
   text-align: center;
+  font-size: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row-info{
+  display: flex; 
+  font-size: 20px; 
+   justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.coin-image{
+  height: 100px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coins{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+.coin-item{
+  display: flex;
+  /* gap: 20px; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 13rem;
+  padding-top: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.load{
+  text-align: center;
 }
