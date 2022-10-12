@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import CoinItem from "./Components/CoinItem";
 import Loading from "./Components/Loading";
+import { GiTwoCoins } from "react-icons/gi";
 
 let url =
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false";
@@ -36,6 +37,10 @@ function App() {
 
   return (
     <>
+      <nav>
+        <GiTwoCoins color="white" size={50} />
+        <h2 className="coins-nav">GetCoins</h2>
+      </nav>
       <div className="row-info">
         <h2>Rank</h2>
         <h2>Name</h2>
